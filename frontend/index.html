@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+	<title>Set Up</title>
+	<meta name="description" content="Sidebar Transitions: Transition effects for off-canvas views" />
+	<meta name="keywords" content="transition, off-canvas, navigation, effect, 3d, css3, smooth" />
+	<meta name="author" content="Rodrigo" />
+	<link rel="stylesheet" type="text/css" href="../styles/assets/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/assets/demo.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/assets/icons.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/assets/component.css" />
+	<link rel="stylesheet" type="text/css" href="../styles/assets/bootstrap.min.css" />
+	<script type="text/javascript" src="../scripts/assets/classie.js"></script>
+	<script type="text/javascript" src="../scripts/assets/modernizr.custom.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles/assets/dc.min.css"/>
+	<link rel="stylesheet" type="text/css" href="styles/style.css"/>
+	<script type="text/javascript" src="scripts/assets/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="scripts/assets/bootstrap.min.js"></script>
+	<script type="text/javascript" src="scripts/assets/crossfilter.min.js"></script>
+	<script type="text/javascript" src="scripts/assets/d3.min.js"></script>
+	<script type="text/javascript" src="scripts/assets/dc.min.js"></script>
+	<script type="text/javascript" src="scripts/assets/angular.js"></script>
+	<script type="text/javascript" src="scripts/assets/angular-router.js"></script>
+	<script type="text/javascript" src="scripts/app.js"></script>
+
+	<base href="/" />
+</head>
+
+<body ng-app="app">
+	<div id="st-container" class="st-container">			
+			<nav class="st-menu st-effect-11" id="menu-11">
+				<h2 class="icon icon-lab">Languages<br/>and Frameworks</h2>
+				<ul>
+					<li><a href="#row">Row</a></li>
+					<li><a href="#pie">Pie</a></li>
+					<li><a href="#line">Line</a></li>					
+					<li><a href="#bubble">Bubble</a></li>
+					<li><a href="#table">Table</a></li>
+					<li><a href="#rowpie">Row-Pie</a></li>
+					<li><a href="#rowpieline">Row-Pie-Line</a></li>
+					<li><a href="#rowpielinebubble">Row-Pie-Line-Bubble</a></li>
+					<li><a href="#rowpielinebubbletable">All</a></li>
+					<li><a href="#inputoptions">Input Options</a></li>
+                    <li><a href="#inputtabs">Input Tabs</a></li>
+                    <li><a href="#inputfilter">Input Filter</a></li>
+                    <li><a href="#keyboard">Keyboard</a></li>
+				</ul>
+			</nav>			
+
+			<!-- content push wrapper -->
+			<div class="st-pusher">
+				<div class="st-content"><!-- this is the wrapper for the content -->
+					<div class="st-content-inner"><!-- extra div for emulating position:fixed of the menu -->
+						<!-- Top Navigation -->
+						<div class="codrops-top topbar">
+							<div id="st-trigger-effects"><button data-effect="st-effect-11">Menu</button></div>
+						</div><!-- /main -->
+
+						<div class="container">		
+							<div class="tab-content">
+								<ng-view></ng-view>
+						    </div>
+						</div>
+						
+					</div><!-- /st-content-inner -->
+				</div><!-- /st-content -->
+			</div><!-- /st-pusher -->
+	</div><!-- /st-container -->
+
+	<script type="text/javascript" src="../scripts/assets/sidebarEffects.js"></script>
+</body>
+</html>

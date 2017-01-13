@@ -1,0 +1,69 @@
+<br>
+<div class="col-md-12 text-center">
+
+	<button type="button" class="btn btn-primary" onclick=filter1()>Human and Dog</button>
+	<button type="button" class="btn btn-primary" onclick=filter2()>Human</button>
+	<button type="button" class="btn btn-primary" onclick=filter3()>Dog</button>
+	<button type="button" class="btn btn-primary" onclick=filter4()>Bird</button>
+	<button type="button" class="btn btn-primary" onclick=filter5()>Food-Beast</button>
+
+	<hr/>
+	<br/>
+</div>	
+
+
+<!-- CHARTS!!! -->
+<!-- *************************************** -->	
+<div class="row">
+	<!-- row chart -->
+	<div class="col-md-6 col-md-offset-1">
+		<div id="rowchart" class="dc-chart">
+			<div id="retro">
+				<h1>Types</h1>
+			</div>	
+			
+			<center>
+				<div>			
+					<a class="reset" href="javascript:RowChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+					<div class="clearfix"></div>
+					<span class="reset" style="display: none;">Current filter: <span class="filter"></span></span>
+				</div>			
+			</center>			
+			
+			<br/>
+		</div> 
+	</div>
+	
+	<!-- pie chart -->	
+	<div class="col-md-4">
+		
+		<div id="piechart" class="dc-chart">
+			<div id="retro">
+			<h1>Names</h1>
+			</div>
+
+			<center>
+				<div>
+					<a class="reset" href="javascript:PieChart.filterAll();dc.redrawAll();" style="display: none;">reset</a>
+					<div class="clearfix"></div>
+					<span class="reset" style="display: none;">Current filter: <span class="filter"></span></span>
+				</div>			
+			</center>
+		
+			<br/>
+		</div>
+	</div> <!-- end pie chart -->			
+</div> <!-- end class="row" -->
+
+
+<!-- RANDOM TEXT -->
+<!-- *************************************** -->
+<br/>
+<br/>
+<div id="retro">
+	<h1>Quisque dapibus porta mi, eget laoreet massa suscipit id. Fusce fermentum nunc a lacus mattis, ut efficitur ipsum rhoncus. Donec massa turpis, lacinia ac commodo vel, placerat et metus. Nullam molestie, ex et lobortis mattis, arcu metus dignissim metus, in rutrum quam diam vitae dolor. Mauris pulvinar nec dolor sit amet sodales. Nullam vel neque ut enim ornare mattis. Nulla vel neque vulputate, commodo massa ut, egestas nulla. Nam imperdiet dolor libero, at iaculis orci condimentum quis.</h1>
+</div>
+
+
+
+
